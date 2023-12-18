@@ -5,11 +5,11 @@ import service.ICalcOperatorFactory;
 
 import java.util.Scanner;
 
-public class CalculatorView {
-    private ICalcOperatorFactory calcOperatorFactory;
+public class CalculatorView implements ICalculatorView {
+    private final ICalcOperatorFactory calcOperatorFactory;
 
-    public CalculatorView(ICalcOperatorFactory calculableFactory) {
-        this.calcOperatorFactory = calculableFactory;
+    public CalculatorView(ICalcOperatorFactory calcOperatorFactory) {
+        this.calcOperatorFactory = calcOperatorFactory;
     }
 
     public void run() {
