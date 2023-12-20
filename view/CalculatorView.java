@@ -12,6 +12,7 @@ public class CalculatorView implements ICalculatorView {
         this.calcOperatorFactory = calcOperatorFactory;
     }
 
+    @Override
     public void run() {
         while (true) {
             float argument = promptFloat("Введите первое число: ");
